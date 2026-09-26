@@ -131,8 +131,11 @@ Available sizes, smallest first: `tiny.en`, `base.en`, `small.en`, `medium.en`. 
 
 I got a real-time factor of 0.23 with tiny.en and 0.43 with base.en. Base.en took almost twice as long without noticeably improving the result, so for this recording, I’d stick with tiny.en for a faster reply.
 
+<img width="1135" height="352" alt="image" src="https://github.com/user-attachments/assets/75521e32-6d21-411a-b563-96c8770f6b91" />
 
-\*\***Write your own script that verbally asks for a numerical input (a phone number, zipcode, number of pets) and records the answer the respondent provides.**\*\* Numbers are a good stress test — transcription systems make characteristic errors on digit strings, and you will want to know what they are before you design around them.
+My script asks how many pets the user has, records the answer, and transcribes it. I tested it with “Two,” which it recognized correctly.
+
+Script: [ask_number.sh](https://github.com/xl2323-sudo/Interactive-Lab-Hub/blob/Fall2026/Lab%203/speech-scripts/ask_number.sh)
 
 ## C. Turn-taking: knowing when someone has stopped talking
 
