@@ -108,8 +108,7 @@ The demo script also shows `--output-raw`, which streams audio to the speaker as
 
 My personalized Piper greeting script: [greet.sh](https://github.com/xl2323-sudo/Interactive-Lab-Hub/blob/Fall2026/Lab%203/speech-scripts/greet.sh)
 
-\*\***Then answer: Is the same greeting, in these different voices, the same greeting? Describe one concrete way the voice changed what the utterance seemed to mean or who seemed to be speaking.**\*\*
-
+The words are the same, but the greeting feels different depending on the voice. eSpeak talked the fastest, Festival sounded the most robotic, and Piper sounded the most natural to me. For example, “Welcome back” in Festival felt like an automatic announcement, while in Piper it felt more like someone was actually welcoming me. That’s why I picked Piper for my greeting script.
 ## B. Speech to Text
 
 We use [faster-whisper](https://github.com/SYSTRAN/faster-whisper), a reimplementation of OpenAI's Whisper model that runs several times faster on CPU and does not require PyTorch. All processing happens on the Pi; nothing is sent to a server.
