@@ -181,7 +181,7 @@ Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stu
 
 Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses.
 
-\*\***Please describe and document your process.**\*\*
+I started with a simple coffee order and broke it into drink, temperature, size, and confirmation. I included a change from medium to large to show why pauses matter. Then I used a storyboard and flowchart to map the interaction, choosing a 0.8-second silence threshold to allow short pauses.
 
 Your script should include the pauses. Where does your device wait, and for how long? You now know from Part C that this is a parameter you have to choose, not something that happens for free.
 
