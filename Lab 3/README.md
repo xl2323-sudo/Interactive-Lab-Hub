@@ -175,7 +175,9 @@ The bot heard me correctly and repeated my words. Processing took about 1.33 sec
 
 Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stuck? Make a device that talks for dogs. If that is too stupid, find an application that is better than that.)
 
-\*\***Post your storyboard and diagram here.**\*\*
+<img width="1536" height="1024" alt="exec-1f8e6f4b-6fc2-428c-ab8e-3c0ffec35b82" src="https://github.com/user-attachments/assets/adca490a-0e04-4333-8927-f5928c6b04e5" />
+
+<img width="1536" height="1024" alt="exec-1a6390a9-bb66-4857-9f9a-32297839455b" src="https://github.com/user-attachments/assets/b8694d28-0b84-4c2e-b4ce-49eaa59239c8" />
 
 Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses.
 
