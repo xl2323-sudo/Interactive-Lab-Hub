@@ -160,10 +160,6 @@ At 0.2s, it felt impatient: pauses while thinking or correcting myself split my 
 
 There is no correct value. A system that takes drink orders and a system that listens to someone think out loud want very different thresholds, and the right one depends on what your users are doing with their pauses.
 
-<img width="809" height="146" alt="7eea39d8dd943eb77701faad58de985f" src="https://github.com/user-attachments/assets/2cb081e6-32fa-4ade-9e29-85e3d362bfc1" />
-
-The bot heard me correctly and repeated my words. Processing took about 1.33 seconds, plus the 0.4-second pause used to detect that I had finished speaking.
-
 ### The complete loop
 
 `echo_bot.py` puts the pieces together: it listens, endpoints, transcribes, and speaks a reply through Piper. The dialogue policy is deliberately trivial — it repeats what you said — so that everything you notice is a property of the timing rather than the content.
@@ -171,6 +167,9 @@ The bot heard me correctly and repeated my words. Processing took about 1.33 sec
 ```
 (.venv) $ python echo_bot.py
 ```
+<img width="809" height="146" alt="7eea39d8dd943eb77701faad58de985f" src="https://github.com/user-attachments/assets/2cb081e6-32fa-4ade-9e29-85e3d362bfc1" />
+
+The bot heard me correctly and repeated my words. Processing took about 1.33 seconds, plus the 0.4-second pause used to detect that I had finished speaking.
 
 ## D. Storyboard
 
