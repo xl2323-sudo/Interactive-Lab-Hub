@@ -131,7 +131,21 @@ Then press q to quit and run it again with a flag. Each one changes a single thi
 (.venv) pi@raspberrypi:~/Interactive-Lab-Hub/Lab 5 $ python yolo_person.py --headless     # no window, only the printed readings: how it runs over ssh, and at night
 ```
 
-\*\*\***Include a short video or screenshots of the person detection. Write down three situations where it did not see you, or saw a person who was not there, and what you think the cause was.**\*\*\*
+[Watch the Part B person detection demo](./WayVNC%20-%20TigerVNC%202026-10-22%2019-37-30.mp4)
+
+<img width="2559" height="1599" alt="image" src="https://github.com/user-attachments/assets/75a740f6-13c9-4b41-854c-d2febee8428f" />
+
+<img width="2559" height="1599" alt="image" src="https://github.com/user-attachments/assets/b294cfe4-50ce-4d75-809c-30b1e05f51cd" />
+
+<img width="2559" height="1599" alt="image" src="https://github.com/user-attachments/assets/f376102b-1689-41a7-8ea5-4de86ed69ef1" />
+
+In Part B, I tested the default person detection mode, confidence thresholds of 0.2 and 0.7, detection across all classes, and headless mode without a display window.
+
+Person detection was generally reliable. During my tests, I did not observe any instances where I remained in the camera frame but was not detected. However, although I was the only person present throughout the tests, the model sometimes detected my hand as an additional person, causing the reported count to increase to two. This was a confirmed false positive, possibly because the model interpreted the hand’s partial outline as human features.
+
+In all-class detection mode, the model incorrectly labeled my headphones as a “toilet” with a confidence of 0.61 and part of an earcup as a “banana” with a confidence of 0.52. It correctly identified a bottle as “bottle” with a confidence of 0.78. These results show that a relatively high confidence score does not necessarily indicate a correct classification.
+
+So far, I have confirmed one type of false positive in person detection. I have not yet observed two additional situations involving missed or falsely detected people.
 
 
 ## Part C. 
