@@ -106,7 +106,7 @@ pi@raspberrypi:~ $ ollama list
 | `qwen3.5:0.8b` | ~1.3 GB | text **and images**; the one we use in this lab |
 | `qwen3:0.6b` | ~0.5 GB | text only, smaller and faster (~16 tokens/s on a Pi 5) |
 
-\*\*\***Include a screenshot of `ollama list` showing your models, and the `bus.jpg` result and your own photo with their boxes.**\*\*\*
+<img width="993" height="117" alt="image" src="https://github.com/user-attachments/assets/2635837d-d12a-4c91-8145-faff19bc387e" />
 
 
 ## Part B. 
