@@ -172,8 +172,7 @@ Try the two main features of this script: 1) pinching for percentage control (th
 
 Consider how you might use this position based approach to create an interaction, and write how you might use it on either face, hand or body pose tracking.
 
-\*\*\***Include a screenshot or short video of the hand pose demo, and write how you might use face, hand or body pose tracking in your observant system.**\*\*\*
-
+[Watch the Part C hand gesture demo](./WayVNC%20-%20TigerVNC%202026-10-22%2019-59-06.mp4)
 
 ## Part D. 
 ### Reason: run Qwen on the Pi with Ollama
