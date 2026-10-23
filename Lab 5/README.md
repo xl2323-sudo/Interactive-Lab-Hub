@@ -174,6 +174,10 @@ Consider how you might use this position based approach to create an interaction
 
 [Watch the Part C hand gesture demo](./WayVNC%20-%20TigerVNC%202026-10-22%2019-59-06.mp4)
 
+In Part C, I used MediaPipe to track hand landmarks. Changing the distance between my thumb and index finger adjusted the displayed percentage, while the Quiet Coyote gesture set it to 0%.
+
+I could use these gestures in my observant system to start overnight monitoring and silently acknowledge a morning report without touching the device.
+
 ## Part D. 
 ### Reason: run Qwen on the Pi with Ollama
 
