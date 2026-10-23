@@ -209,7 +209,23 @@ Four things in the [Ollama API](https://github.com/ollama/ollama/blob/main/docs/
 
 A 0.8B model is slow and sometimes wrong. It will invent events that are not in the data and agree with a wrong premise. Give it the data, keep its job narrow, and decide what the device does when the model is unsure.
 
-\*\*\***Ask Qwen three questions a bedside device might need to answer. Paste the questions, the answers and how long each took. Try one of them with `qwen3:0.6b` and compare.**\*\*\*
+<img width="1061" height="801" alt="image" src="https://github.com/user-attachments/assets/3afe0aa4-e66b-45ce-a030-3423e9d0f202" />
+
+I ran Qwen locally through Ollama with thinking disabled. I tested three bedside questions using this **synthetic log**, rather than real overnight data:
+
+- 23:00 — Nobody present.
+- 23:10 — One person entered.
+- 23:12 — The person left.
+
+| Question | Qwen3.5:0.8b response summary | Time | Evaluation |
+|---|---|---|---|
+| Did anyone enter the room after 23:00? | Nobody entered. | 2.6 s | Incorrect: one person entered at 23:10. |
+| How many minutes did the person stay in the room? | From 23:00 to 23:12, totaling 22 minutes. | 4.7 s | Incorrect: the recorded stay was 2 minutes. |
+| Can you determine whether I slept well that night? | I likely slept well because little activity occurred. | 5.9 s | Unsupported: the log contains no sleep-quality information. |
+
+**Model comparison:** I repeated the first question with `qwen3:0.6b`. It correctly identified the entry at 23:10 and departure at 23:12, taking **5.0 seconds**, compared with **2.6 seconds** for `qwen3.5:0.8b`. In this trial, the smaller model was slower but more accurate.
+
+These tests showed that even answers based on explicit logs require verification.
 
 
 ## Part E. 
