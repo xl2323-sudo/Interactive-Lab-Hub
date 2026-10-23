@@ -1,6 +1,6 @@
 # Observant Systems: Overnight Sensation
 
-**NAMES OF COLLABORATORS HERE**
+Team members: Xie Li (xl2323), Matthias Corkran (mc3223), Yuxuan Wang (yw2946) 
 
 For lab this week, we focus on creating interactive systems that can detect and respond to events or stimuli in the environment of the Pi, like the Boat Detector we mentioned in lecture. 
 Your **observant device** could, for example, count items, find objects, recognize an event or continuously monitor a room.
