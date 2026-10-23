@@ -271,7 +271,13 @@ Run it with a partner: have them walk in, sit down, leave. Compare the log with 
 * **The format.** `--json` gets `{"people": 1, "activity": "...", "unusual": false}` back, which is what you will want in Part 2 to drive a display or a sound.
 * **The timing.** `--seconds 300` watches longer. `--every` logs every reading instead of only changes, so the log grows to hundreds of lines and Qwen has to find the changes itself. See whether it still can.
 
-\*\*\***Document the pipeline: at least three runs with the log, the question, Qwen's answer, and whether it was right. Include one case where Qwen got it wrong, and say what you changed in the interpreter and why.**\*\*\*
+<img width="1067" height="723" alt="image" src="https://github.com/user-attachments/assets/ff94098f-2a95-4632-aca9-6c6c6fa4272f" />
+
+I tested the YOLO-to-Qwen pipeline three times using recorded detection logs.
+In Run 1 (11.0 s), Qwen incorrectly reported continuous presence and no movement; in Run 2 (15.7 s), it incorrectly answered that nobody left.
+For Run 3, I simplified `interpret()` to output explicit person counts without positions, aiming to reduce confusion.
+Despite the clearer 0 → 1 → 0 log, Qwen again claimed nobody left (11.7 s).
+These tests showed that simplifying the interpreter did not resolve the model’s reasoning errors.
 
 ---
 
