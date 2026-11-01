@@ -366,7 +366,37 @@ The Part E pipeline becomes the night shift. `overnight.py` runs your `interpret
 
 Fake a night first: run it for thirty seconds while you walk around, stop it, and run `morning.py` from Part I. When that looks right, run a real night. If your storyboard needs a sensor rather than the camera, swap in the Lab 4 example code and log its reading the same way.
 
-\*\*\***Run the system for at least one real night. Include the log (or an excerpt) and a few sentences on what broke or surprised you.**\*\*\*
+Our group used a custom fly-trap pipeline instead of the default person detector. A webcam pointed down at the vinegar trap and captured a 1280 × 720 image approximately every five seconds. The capture process ran inside `tmux` so it could continue after the laptop disconnected.
+
+The images stayed on the Pi. Each image also produced a timestamped entry in `capture_log.jsonl`, recording its filename and average brightness. In the morning, `count.py` processed the images to identify and track dark spots within the liquid.
+
+### Real overnight runs
+
+The following recordings and original results were collected by our teammate, mc3223.
+
+| | Night 1 | Night 2 |
+|---|---|---|
+| Date | October 21–22, 2026 | October 22–23, 2026 |
+| Recording period | 22:05–09:12 | 23:15–09:26 |
+| Frames recorded | 7,806 | 7,152 |
+| Reported catches | 1, arriving at 00:25 | 0 |
+| Teammate's morning inspection | 1 fruit fly | No flies |
+
+- [Night 1 capture log](https://github.com/mc3223/Peppers-Ghost/blob/Fall2026/Lab%205/bug-counter/results/night1/capture_log.jsonl)
+- [Night 1 results and annotated image](https://github.com/mc3223/Peppers-Ghost/tree/Fall2026/Lab%205/bug-counter/results/night1)
+- [Night 2 capture log](https://github.com/mc3223/Peppers-Ghost/blob/Fall2026/Lab%205/bug-counter/results/night2/capture_log.jsonl)
+- [Night 2 results and annotated image](https://github.com/mc3223/Peppers-Ghost/tree/Fall2026/Lab%205/bug-counter/results/night2)
+- [Capture and counting code](https://github.com/mc3223/Peppers-Ghost/tree/Fall2026/Lab%205/bug-counter)
+
+### What broke or surprised us
+
+**Reflections could look like flies.** The lamp and the window at dawn created dark edges in the liquid that produced false detections. The counter excludes bright glare and classifies new persistent spots appearing after daylight as uncertain rather than confirmed catches.
+
+**A single detection was not enough.** A newly landed fly could struggle or drift, interrupting its track. The tracking rules were adjusted to tolerate short detection gaps and movement. A candidate must persist for at least ten minutes to count as a catch; persistent spots present at the beginning are recorded separately as already in the trap.
+
+**Lighting changed the liquid's appearance.** A saturation-based mask did not work consistently with paler vinegar. The liquid mask was revised to use yellowness in Lab colour space.
+
+The final counts matched our teammate's morning inspections for these two nights. However, two nights with only one confirmed fly provide limited validation. Brief visits remain unverified and are excluded from the morning report.
 
 ## Part I. 
 ### Design the interaction when awake
