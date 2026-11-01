@@ -305,7 +305,7 @@ Stuck? A kitchen that tells you who raided the fridge. A desk that reports wheth
 
 Use storyboards and/or [Verplank diagrams](https://ccrma.stanford.edu/courses/250a-fall-2004/IDSketchbok.pdf).
 
-<img width="1536" height="1024" alt="0089ec02bf3f17207324cfdbebdfcbbc" src="https://github.com/user-attachments/assets/4d56901f-e5ce-4ead-b116-c5227ecb5679" />
+<img width="1942" height="809" alt="image" src="https://github.com/user-attachments/assets/10d4f057-2051-40c0-a64a-687cf355c8c9" />
 
 Our night-time interaction has three stages:
 
