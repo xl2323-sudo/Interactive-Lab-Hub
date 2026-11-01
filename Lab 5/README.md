@@ -342,6 +342,18 @@ The hand-off: the person tells the device what to watch tonight, and the device 
 
 \*\*\***Describe the bedtime interaction and include a short video of someone handing the night over to the device.**\*\*\*
 
+Our bedtime interaction hands the device one question: **“How many flies will the trap catch tonight, and when will they arrive?”**
+
+Before bed, the user prepares the vinegar trap and holds an open hand with all five fingers spread—the **“quiet spider”** gesture—over the bowl, within the camera’s view.
+
+The device is designed to recognise the gesture after it has been held for approximately 1.5 seconds. The Pi’s green LED then blinks three times and goes dark, acknowledging the hand-off without leaving a bright light on overnight.
+
+After the hand leaves the frame and the liquid has time to settle, the camera begins capturing an image approximately every five seconds. The user can leave the device to record overnight; the images remain on the Pi for morning processing.
+
+[Watch the bedtime interaction video](media/setup.mp4)
+
+The video shows the physical setup and a demonstration of the open-hand gesture above the trap.
+
 ## Part H. 
 ### Incorporate the observant system during sleep
 
