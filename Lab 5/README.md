@@ -319,12 +319,21 @@ Our night-time interaction has three stages:
 ## Prep for Part 2
 
 1. Look at and give feedback on the Part F storyboards.
-   **Put the feedback for your ideas here.**
+   ### Storyboard feedback — simulated peer review
+
+- “Your initial storyboard explains the overall bedtime-to-morning sequence, but the fly’s arrival feels sudden. Could you show it flying into the scene, approaching the bowl, and then entering it? That would make the sequence easier to follow.”
+
+- “The wide view shows the equipment clearly, but I cannot tell what the camera is observing inside the bowl. A top-down close-up would help explain where detection happens.”
+
+- “The fly symbol on the screen tells me that something was detected, but it does not show which object the system identified. Adding a box around the fly would make the detection more explicit.”
+
+- “One detection does not explain what happens as the fly moves. Showing the detection box following the same fly across successive panels would communicate the tracking idea more clearly.”
 2. [Update your Lab Hub](prep.md#get-the-latest-content) to get the latest content for Part 2.
 3. Decide where the device will spend the night and who else lives there. Get their OK before the first run.
 4. Revise your storyboard with the feedback and with what you learned in Part E about where the pipeline breaks.
 
-\*\*\***Post your revised storyboard here.**\*\*\*
+<img width="1536" height="1024" alt="0089ec02bf3f17207324cfdbebdfcbbc" src="https://github.com/user-attachments/assets/d55d24b0-7eb6-4860-8a88-db74f6391520" />
+
 
 ## Part G. 
 ### Design the interaction before bed
