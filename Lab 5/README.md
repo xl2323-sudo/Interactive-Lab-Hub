@@ -350,7 +350,7 @@ The device is designed to recognise the gesture after it has been held for appro
 
 After the hand leaves the frame and the liquid has time to settle, the camera begins capturing an image approximately every five seconds. The user can leave the device to record overnight; the images remain on the Pi for morning processing.
 
-[Watch the bedtime interaction video](media/setup.mp4)
+[Watch the bedtime interaction video](./setup%202.mp4)
 
 The video shows the physical setup and a demonstration of the open-hand gesture above the trap.
 
