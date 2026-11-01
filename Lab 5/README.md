@@ -445,7 +445,34 @@ Document all the prototypes and iterations you have designed and worked on. The 
 * "Works like": the pipeline from detector to interpreter to log to reasoner, with a real night's data.
 * "Acts like": how a person hands the night over and what they get back.
 
-\*\*\***Include a short video of the whole system: the bedtime hand-off, a log excerpt or timelapse of the night, and the morning reveal from a real overnight run.**\*\*\*
+### Looks like
+
+Our device is a vinegar fly trap monitored by a webcam connected to a Raspberry Pi. The camera is positioned above the bowl, with a lamp providing overnight illumination. Its view is focused on the trap rather than on people.
+
+[Watch the setup and bedtime gesture video](./setup%202.mp4)
+
+### Works like
+
+The system captures an image approximately every five seconds and saves a timestamped brightness log. In the morning, the counter identifies dark spots within the liquid and tracks them over time. Persistent candidates are counted separately from brief visits, objects already present at bedtime, and uncertain detections after daylight.
+
+The resulting counts and arrival times are passed to Qwen for a short morning summary. A night with no catches receives a fixed message instead.
+
+Two overnight recordings produced one reported catch on October 21–22 and zero on October 22–23, matching our teammate's morning inspections.
+
+[View the implementation and overnight results](https://github.com/mc3223/Peppers-Ghost/tree/Fall2026/Lab%205/bug-counter)
+
+### Acts like
+
+Before bed, the user performs the “quiet spider” gesture above the trap. The designed acknowledgement is three green LED blinks followed by darkness. After the hand leaves and the liquid settles, overnight recording begins.
+
+In the morning, the user reads the confirmed count and arrival times in the terminal and can inspect the annotated image alongside the physical trap.
+
+### Prototypes and iterations
+
+The reconstructed initial storyboard presents a simple setup–observation–message sequence. The revised storyboard expands the fly's approach, entry into the bowl, detection, and tracking.
+
+Testing also led to changes in the liquid mask, tolerance for interrupted tracks, and handling of daylight reflections. Part E informed the decision to calculate counts before asking Qwen to summarise them.
+
 
 As always, make sure you document contributions and ideas from others (and AI) explicitly in your writeup.
 
