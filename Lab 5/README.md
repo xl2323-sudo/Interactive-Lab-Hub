@@ -305,7 +305,16 @@ Stuck? A kitchen that tells you who raided the fridge. A desk that reports wheth
 
 Use storyboards and/or [Verplank diagrams](https://ccrma.stanford.edu/courses/250a-fall-2004/IDSketchbok.pdf).
 
-\*\*\***Insert ideas, sketches, Verplank diagrams and storyboards for your night-time interaction here.**\*\*\*
+<img width="1536" height="1024" alt="0089ec02bf3f17207324cfdbebdfcbbc" src="https://github.com/user-attachments/assets/4d56901f-e5ce-4ead-b116-c5227ecb5679" />
+
+Our night-time interaction has three stages:
+
+- **Before bed:** The user holds an open hand with all five fingers spread—the “quiet spider” gesture—over the trap. The Pi’s green LED blinks three times and then goes dark to acknowledge the hand-off.
+
+- **While asleep:** The camera watches the vinegar trap, capturing one image approximately every five seconds. The images stay on the Pi for processing. The storyboard above illustrates a fly approaching the bowl and being observed after entering it.
+
+- **When awake:** The system processes the recorded images and presents a short morning report in the terminal. The user learns how many flies were caught and when they arrived, or receives a clear message that no flies were caught.
+
 
 ## Prep for Part 2
 
