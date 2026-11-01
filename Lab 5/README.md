@@ -409,6 +409,34 @@ The reveal. The night produced a log; the morning turns it into something a half
 
 Make it yours: show the report on the Mini PiTFT, read it aloud with Piper from Lab 3, plot the night as a timeline, or ask for JSON (`--json`, Part D) and move a servo. Whatever you pick, make sure it is honest about a night in which nothing happened.
 
+Our morning interaction is a short report displayed in the terminal. It answers the question handed to the device before bed: **“How many flies were caught last night, and when did they arrive?”**
+
+We use the custom `bug-counter/report.py` script. The image-processing pipeline calculates the counts and arrival times first. The script prints these facts, then asks Qwen to turn them into a brief morning report. Qwen does not decide whether a fly was caught.
+
+This design follows our experience in Part E: the language model could misinterpret detection logs, so its role is limited to summarising the finished measurements.
+
+### A night with no catches
+
+For Night 2, the program uses a fixed message without calling Qwen. The output recorded in our teammate's write-up was:
+
+```text
+Watched 23:15-09:26. Caught 0. Already in the trap at bedtime: 0. Lamp off: 0 min. Daylight from 07:04.
+
+Quiet night: the trap watched from 23:15 to 09:26 and caught no flies.
+```
+
+This gives the user a clear result even when nothing was caught. If the lamp was off, the script adds a warning that some activity may have been missed.
+
+### Checking the result
+
+The facts line lets the user compare the generated wording with the measured count and times. For a night with catches, an annotated image also marks the counted candidates, which the user can compare with the contents of the bowl.
+
+The counter stores uncertain detections separately. These are not currently included in the morning message, so making that uncertainty visible remains an improvement.
+
+- [Morning report code](https://github.com/mc3223/Peppers-Ghost/blob/Fall2026/Lab%205/bug-counter/report.py)
+- [Night 1 count and annotated image](https://github.com/mc3223/Peppers-Ghost/tree/Fall2026/Lab%205/bug-counter/results/night1)
+- [Night 2 results](https://github.com/mc3223/Peppers-Ghost/tree/Fall2026/Lab%205/bug-counter/results/night2)
+
 ## Final documentation
 
 Document all the prototypes and iterations you have designed and worked on. The deliverables for this lab are writings, sketches, photos, and videos that show what your system:
